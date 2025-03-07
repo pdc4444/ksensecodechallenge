@@ -11,7 +11,7 @@ const Page: React.FC = () => {
 
     const fetchData = async () => {
         try {
-            let response = await fetch(`${window.location.origin}` + '/payloadShenanigans/api');
+            let response = await fetch(`${window.location.origin}` + '/payloadshenanigans/api');
             let contents = await response.text();
             let contentArray: Array<resultObject> = contents.split(resultDelimiter).filter(result => result !== '').map(result => JSON.parse(result));
             return contentArray.map((row: resultObject) => { 

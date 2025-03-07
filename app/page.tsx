@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
   
   React.useEffect(() => {
-    router.push('/payloadShenanigans');
+    router.push('/payloadshenanigans');
   }, [router]);
 
   return null;
