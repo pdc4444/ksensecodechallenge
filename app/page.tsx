@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
   
   React.useEffect(() => {
-    router.push('/payloadshenanigans');
+    router.push('/webhookchallenge');
   }, [router]);
 
   return null;
